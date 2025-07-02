@@ -1,0 +1,75 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "sans-serif", "serif";
+  /* This defines what 1rem should be */
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+header {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+  height: max-content;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  height: max-content;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+main {
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  background-color: #f0f0f022;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+aside {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 1;
+  padding: 2rem;
+  font-size: 1.6rem;
+  width: 50rem;
+  background-color: #fefefe22;
+}
+
+footer {
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+  font-size: 1.6rem;
+  padding: 2rem;
+  height: 10rem;
+}
