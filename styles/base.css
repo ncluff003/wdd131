@@ -1,0 +1,235 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "sans-serif", "serif";
+  /* This defines what 1rem should be */
+  font-size: 62.5%;
+  font-family: "Roboto Slab", Roboto, sans-serif, serif;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+header {
+  position: relative;
+  display: flex;
+  height: max-content;
+  width: 100%;
+  padding: 2rem 0 0;
+  background-color: #117716;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header span {
+  display: block;
+  font-size: 4.25rem;
+  color: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  height: max-content;
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: space-evenly;
+  background-color: #f0f0f044;
+  border-top: 0.2rem solid #ffd700;
+}
+
+header nav a {
+  font-size: 2rem;
+  color: #f0f0f0cc;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-top: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+}
+
+header nav a:hover {
+  /* background-color: #1a1a1a; */
+  color: #f0f0f0ee;
+  border-top: 0.2rem solid #f0f0f0ee;
+  border-bottom: 0.2rem solid #f0f0f0ee;
+  transition: color 0.25s ease-in, border 0.25s ease-in;
+}
+
+header nav a:active {
+  background-color: #f0f0f0;
+  color: #117716;
+  border-top: 0.2rem solid #f0f0f0;
+  border-bottom: 0.2rem solid #f0f0f0;
+  transition: color 0.25s ease-in, border 0.25s ease-in, background-color 0.25s ease-in;
+}
+
+main {
+  position: relative;
+  height: max-content;
+  width: 100rem;
+  display: grid;
+  grid-template: auto 1fr / repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 1rem 0 0rem;
+}
+
+main .card {
+  grid-row: 2 / -1;
+  position: relative;
+  height: 100%;
+  width: 98%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+}
+
+main .card:first-of-type {
+  grid-column: 1 / span 2;
+}
+
+main .card article {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main .card article h2,
+main .card:last-of-type h2 {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: #117716;
+  font-size: 1.6rem;
+  color: #f0f0f0;
+}
+
+main .card article div {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 1rem;
+}
+
+main .card article div #about-me,
+main .card article div #about-city {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  padding: 0 1rem;
+  text-indent: 2rem;
+  line-height: 1.5;
+}
+
+main .card article div img {
+  position: relative;
+  height: auto;
+  width: 20rem;
+}
+
+main .card:first-of-type article div #city-flag {
+  align-self: start;
+}
+
+main .card:last-of-type {
+  grid-column: 3 / span 1;
+}
+
+main .card:last-of-type #sub-navigation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: start;
+  padding: 2rem;
+}
+
+main .card:last-of-type #sub-navigation a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #11771677;
+}
+
+main .card:last-of-type #sub-navigation a:not(a:first-of-type) {
+  margin: 2rem 0 0;
+}
+
+main .card:last-of-type #sub-navigation a:hover {
+  cursor: pointer;
+  color: #117716cc;
+  transition: color 0.25s ease-in;
+}
+
+main .card:last-of-type #sub-navigation a:hover::after {
+  position: absolute;
+  content: "   ⬅️";
+  white-space: pre;
+}
+
+main .card:last-of-type #sub-navigation a:active {
+  cursor: pointer;
+  color: #b42f01;
+  transition: color 0.25s ease-in;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  height: max-content;
+  width: 100%;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+
+footer p:not(p:first-of-type) {
+  margin: 1rem 0 0;
+}

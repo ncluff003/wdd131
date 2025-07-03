@@ -12,6 +12,11 @@
   <meta name="description" content="All about Nathan Cluff while in WDD 131 - Dynamic Web Fundamentals.">
   <meta name="author" content="Nathan Cluff">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" async defer></script>
 </head>
@@ -40,48 +45,36 @@
   <main>
     <h1>Nathan Cluff</h1>
     <section class="card">
-      <h2>About Me</h2>
-      <div>
+      <article>
+        <h2>About Me</h2>
         <div>
-          <p id="about-me"></p>
+          <p id="about-me">Hello, my name is Nathan Cluff. I had been born in Lubbock, TX and have since been living in
+            Sandy, UT with my wife of now nearly 8 years and children who are ages 4 and 6. While I have learned much in
+            regard to web development on my own, I am pursuing a Bachelors in Software Development through BYU Pathway
+            to hopefully get into the career field as soon as is possible.</p>
+          <img src="images/My_Picture.jpg" alt="Headshot of Nathan Cluff">
         </div>
-        <article>
-          <h3 id="current-location"></h3>
-          <div>
-            <div>
-              <img src="" alt="">
-              <p id="image-description"></p>
-            </div>
-            <p id="about-location"></p>
-          </div>
-        </article>
-      </div>
-      <div>
-        <img src="images/My_Picture.jpg" alt="Headshot of Nathan Cluff">
-      </div>
+      </article>
+      <article>
+        <h2 id="current-location"></h2>
+        <div>
+          <img id="city-flag" src="images/Sandy-City-Flag.jpg" alt="Sandy, Utah City Flag">
+          <p id="about-city">Sandy itself is a city located in the eastern half of the Salt Lake City metropolitan area
+            at the base of the Wasatch Mountains.
+          </p>
+        </div>
+      </article>
     </section>
     <section class="card">
       <h2>Web Dev Resources</h2>
-      <ul>
-        <li>
-          <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
-        </li>
-        <li>
-          <a href="https://www.typescriptlang.org/">TypeScript Docs</a>
-        </li>
-        <li>
-          <a href="https://react.dev/">React Docs</a>
-        </li>
-        <li>
-          <a href="https://www.codecademy.com">CodeCademy</a>
-        </li>
-        <li>
-          <a href="https://www.w3schools.com/">W3Schools</a>
-        </li>
-        <li>
-          <a href="https://www.udemy.com/">Udemy</a>
-        </li>
-      </ul>
+      <nav id="sub-navigation">
+        <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+        <a href="https://www.typescriptlang.org/">TypeScript Docs</a>
+        <a href="https://react.dev/">React Docs</a>
+        <a href="https://www.codecademy.com">CodeCademy</a>
+        <a href="https://www.w3schools.com/">W3Schools</a>
+        <a href="https://www.udemy.com/">Udemy</a>
+      </nav>
     </section>
   </main>
   <footer>
