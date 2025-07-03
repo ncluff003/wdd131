@@ -30,7 +30,7 @@ header {
   height: max-content;
   width: 100%;
   padding: 2rem 0 0;
-  background-color: #117716;
+  background-color: #0f6613;
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
@@ -39,7 +39,7 @@ header {
 header span {
   display: block;
   font-size: 4.25rem;
-  color: #f0f0f0;
+  color: #fefefe;
   margin-bottom: 2rem;
 }
 
@@ -56,7 +56,7 @@ header nav {
 
 header nav a {
   font-size: 2rem;
-  color: #f0f0f0cc;
+  color: #fefefecc;
   text-decoration: none;
   padding: 1rem 2rem;
   border-top: 0.2rem solid transparent;
@@ -73,7 +73,7 @@ header nav a:hover {
 
 header nav a:active {
   background-color: #f0f0f0;
-  color: #117716;
+  color: #0f6613;
   border-top: 0.2rem solid #f0f0f0;
   border-bottom: 0.2rem solid #f0f0f0;
   transition: color 0.25s ease-in, border 0.25s ease-in, background-color 0.25s ease-in;
@@ -136,9 +136,9 @@ main .card:last-of-type h2 {
   justify-content: center;
   padding: 1rem;
   border-radius: 0.75rem;
-  background-color: #117716;
+  background-color: #0f6613;
   font-size: 1.6rem;
-  color: #f0f0f0;
+  color: #fefefe;
 }
 
 main .card article div {
