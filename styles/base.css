@@ -50,13 +50,13 @@ header nav {
   width: 100%;
   padding: 1rem 0;
   justify-content: space-evenly;
-  background-color: #f0f0f044;
+  background-color: #f0f0f033;
   border-top: 0.2rem solid #ffd700;
 }
 
 header nav a {
   font-size: 2rem;
-  color: #fefefecc;
+  color: #fefefeff;
   text-decoration: none;
   padding: 1rem 2rem;
   border-top: 0.2rem solid transparent;
@@ -65,10 +65,9 @@ header nav a {
 
 header nav a:hover {
   /* background-color: #1a1a1a; */
-  color: #f0f0f0ee;
-  border-top: 0.2rem solid #f0f0f0ee;
-  border-bottom: 0.2rem solid #f0f0f0ee;
-  transition: color 0.25s ease-in, border 0.25s ease-in;
+  border-top: 0.2rem solid #f0f0f0;
+  border-bottom: 0.2rem solid #f0f0f0;
+  transition: border 0.25s ease-in;
 }
 
 header nav a:active {
@@ -188,7 +187,7 @@ main .card:last-of-type #sub-navigation {
 main .card:last-of-type #sub-navigation a {
   font-size: 1.6rem;
   text-decoration: none;
-  color: #11771677;
+  color: #117716ff;
 }
 
 main .card:last-of-type #sub-navigation a:not(a:first-of-type) {
@@ -197,8 +196,6 @@ main .card:last-of-type #sub-navigation a:not(a:first-of-type) {
 
 main .card:last-of-type #sub-navigation a:hover {
   cursor: pointer;
-  color: #117716cc;
-  transition: color 0.25s ease-in;
 }
 
 main .card:last-of-type #sub-navigation a:hover::after {
