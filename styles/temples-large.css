@@ -1,0 +1,142 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Roboto, "sans-serif", serif;
+  /* This defines what 1rem should be */
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  height: 7rem;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: navy;
+  color: white;
+}
+
+header p {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+header #menu {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  background-color: transparent;
+  color: white;
+}
+
+header #menu::before {
+  /* content: "🍔"; */
+  content: "☰";
+}
+
+header nav {
+  position: relative;
+  height: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  height: 80%;
+  min-width: 5rem;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+header nav a:hover {
+  background-color: white;
+  color: navy;
+  transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
+.show a {
+  display: flex;
+}
+
+header #menu.show::before {
+  content: "❌";
+}
+
+main {
+  position: relative;
+  display: grid;
+  grid-template: 1fr auto / repeat(3, 1fr);
+  gap: 4.8rem;
+  max-width: 1200px;
+  margin: 4rem auto 8rem;
+}
+
+main h1 {
+  position: relative;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+}
+
+main figure,
+main figure img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+main figure figcaption {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  background-color: navy;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 2rem;
+}
