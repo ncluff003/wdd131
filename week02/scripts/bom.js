@@ -8,6 +8,7 @@ button.addEventListener("click", (event) => {
     const deleteButton = document.createElement("button");
     li.textContent = input.value;
     deleteButton.innerText = "❌";
+
     deleteButton.ariaLabel = `Remove ${li.textContent}`;
     deleteButton.addEventListener("click", (event) => {
       list.removeChild(li);
