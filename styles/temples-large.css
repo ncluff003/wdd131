@@ -48,6 +48,7 @@ header #menu {
 }
 
 header #menu::before {
+  display: none;
   /* content: "🍔"; */
   content: "☰";
 }
@@ -81,14 +82,6 @@ header nav a:hover {
   transition: color 0.5s ease-in, background-color 0.5s ease-in;
 }
 
-.show a {
-  display: flex;
-}
-
-header #menu.show::before {
-  content: "❌";
-}
-
 main {
   position: relative;
   display: grid;
@@ -102,6 +95,12 @@ main h1 {
   position: relative;
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: navy;
 }
 
 main figure,
