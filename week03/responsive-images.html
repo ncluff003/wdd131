@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - Nathan Cluff - Responsive Images</title>
+  <meta name="description" content="Responsive images and best practices.">
+  <meta name="author" content="Nathan Cluff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/responsive-images.css">
+  <!-- <script src="" async defer></script> -->
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <header></header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="./images/hero_large.webp" media="(min-width: 1000px)">
+        <source srcset="./images/hero_medium.webp" media="(min-width: 500px)">
+        <img src="./images/hero_small.webp" alt="Nauvoo Temple" width="500px" height="250px">
+      </picture>
+    </div>
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>

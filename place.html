@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 | Nathan Cluff | A Place I Have Been</title>
+  <meta name="description" content="A short website about a place I have been.">
+  <meta name="author" content="Nathan Cluff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-small.css">
+  <script src="scripts/getdates.js" async defer></script>
+  <script src="scripts/place.js" async defer></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <header>
+    <h1 id="title"></h1>
+  </header>
+  <main>
+    <picture>
+      <source srcset="./images/wales_large.webp" media="(min-width: 1500px)">
+      <!-- Desktop Image -->
+      <source srcset="./images/wales_medium.webp" media="(min-width: 800px)">
+      <!-- Tablet Image -->
+      <img src="./images/wales_small.webp" alt="Part of countryside of wales and a castle." width="500" height="375">
+      <!-- Mobile Image As The Last One -->
+    </picture>
+    <article id="place-data">
+      <h2 id="place-data_header">Data</h2>
+      <div class="place-data_content"></div>
+    </article>
+    <article id="place-weather">
+      <h2 id="place-weather_header">
+        Weather
+        <img src="./images/rainy-cloud.svg" alt="rainy cloud svg icon" width="200" height="200">
+      </h2>
+      <div class="place-weather_content"></div>
+    </article>
+  </main>
+  <footer>
+    <p>
+      ©️ <span id="currentyear"></span> | Nathan Cluff | Utah, USA 🇺🇸
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>

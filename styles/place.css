@@ -1,0 +1,161 @@
+:root {
+  --wales-green: #00b140;
+  --wales-red: #c8102e;
+}
+
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Roboto, sans-serif, serif;
+  /* This defines what 1rem should be */
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header,
+footer {
+  position: relative;
+  display: flex;
+  height: 12.5vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--wales-red);
+}
+
+header > #title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+main picture {
+  width: 100%;
+  vertical-align: middle;
+}
+
+main img {
+  position: relative;
+  display: block;
+  height: 75vh;
+  width: 100vw;
+}
+
+#place-data,
+#place-weather {
+  position: absolute;
+  height: max-content;
+  width: max-content;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+#place-data {
+  top: 17.5%;
+  left: 2.5rem;
+}
+
+#place-weather {
+  bottom: 17.5%;
+  right: 2.5rem;
+}
+
+#place-data_header,
+#place-weather_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: max-content;
+  background-color: var(--wales-green);
+  padding: 1.5rem;
+  font-size: 3rem;
+  color: #1a1a1a;
+  font-weight: bold;
+  transform: translateX(-3rem);
+}
+
+#place-data_header {
+  width: 35rem;
+}
+
+#place-weather_header {
+  width: 27.5rem;
+}
+
+#place-weather_header img {
+  display: none;
+  height: auto;
+  width: 5rem;
+}
+
+#place-weather_header::before {
+  position: absolute;
+  display: inline-block;
+  content: "🌧️";
+  right: 3rem;
+}
+
+#place-data .place-data_content,
+#place-weather .place-weather_content {
+  position: relative;
+  height: max-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+#place-data .place-data_content label,
+#place-weather .place-weather_content label {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-right: 2rem;
+}
+
+#place-data .place-data_content p,
+#place-weather .place-weather_content p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+#place-data .place-data_content {
+  min-height: 30rem;
+  grid-template-rows: repeat(8, 1fr);
+}
+#place-weather .place-weather_content {
+  min-height: 20rem;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+footer {
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+  color: #ffffff;
+}

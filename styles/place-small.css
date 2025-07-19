@@ -1,0 +1,59 @@
+:root {
+  --wales-green: #00b140;
+  --wales-red: #c8102e;
+}
+
+@media screen and (max-width: 750px) {
+  main > picture > img {
+    border-bottom: 0.4rem solid var(--wales-red);
+  }
+
+  #place-data,
+  #place-weather {
+    position: relative;
+    width: 100%;
+  }
+
+  #place-data {
+    left: 0;
+  }
+
+  #place-weather {
+    right: 0;
+  }
+
+  #place-data_header,
+  #place-weather_header {
+    transform: translateX(0);
+    width: 100%;
+    background-color: transparent;
+  }
+
+  #place-data_header {
+    justify-content: center;
+  }
+
+  #place-weather_header {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15rem;
+  }
+
+  #place-weather_header::before {
+    display: none;
+    content: "";
+  }
+
+  #place-weather_header img {
+    display: inline-block;
+  }
+
+  #place-data > .place-data_content,
+  #place-weather > .place-weather_content {
+    align-items: center;
+  }
+
+  footer > #lastModified {
+    text-align: center;
+  }
+}
