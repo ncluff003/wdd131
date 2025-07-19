@@ -106,7 +106,7 @@ main img {
   width: 5rem;
 }
 
-#place-weather_header::before {
+#place-weather_header::after {
   position: absolute;
   display: inline-block;
   content: "🌧️";

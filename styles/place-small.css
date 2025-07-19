@@ -39,7 +39,7 @@
     height: 15rem;
   }
 
-  #place-weather_header::before {
+  #place-weather_header::after {
     display: none;
     content: "";
   }
