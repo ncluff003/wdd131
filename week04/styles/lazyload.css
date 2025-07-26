@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+main img {
+  display: block;
+  background: #000;
+  animation: fade 15s;
+}
+
+main picture:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 | Nathan Cluff | Lazy Loading</title>
+  <meta name="description" content="An example of lazy loading.">
+  <meta name="author" content="Nathan Cluff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" async defer></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <main>
+    <h1>Lazy Loading Images</h1>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+    <picture>
+      <img src="https://picsum.photos/400/600" alt="" height="600" width="400" loading="lazy">
+    </picture>
+  </main>
+  <footer>
+    <p>
+      ©️ <span id="currentyear"></span> | Nathan Cluff | Utah, USA 🇺🇸
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
