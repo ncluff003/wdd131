@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 | Nathan Cluff | Product Review Form</title>
+  <meta name="description" content="A Product Review Form Using Best Practices">
+  <meta name="author" content="Nathan Cluff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/form-small.css">
+  <script src="scripts/getdates.js" async defer></script>
+  <script src="scripts/form.js" async defer></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <header></header>
+  <main>
+    <form action="review.html" method="get">
+      <label>
+        Product Name
+        <select name="products" title="products" id="products" required></select>
+      </label>
+      <label>
+        Overall Rating
+      </label>
+      <div class="stars">
+        <input type="radio" name="stars" id="fivestar" value="5" required>
+        <label for="fivestar"></label>
+        <input type="radio" name="stars" id="fourstar" value="4" required>
+        <label for="fourstar"></label>
+        <input type="radio" name="stars" id="threestar" value="3" required>
+        <label for="threestar"></label>
+        <input type="radio" name="stars" id="twostar" value="2" required>
+        <label for="twostar"></label>
+        <input type="radio" name="stars" id="onestar" value="1" required>
+        <label for="onestar"></label>
+      </div>
+      <label>
+        Date of Installation
+        <input type="date" name="date" id="date" required>
+      </label>
+      <label>
+        Useful Features
+        <label>
+          <input type="checkbox" name="durability" id="durability">
+          Durability
+        </label>
+        <label>
+          <input type="checkbox" name="easeOfUse" id="easeOfUse">
+          Ease Of Use
+        </label>
+        <label>
+          <input type="checkbox" name="performance" id="performance">
+          Performance
+        </label>
+        <label>
+          <input type="checkbox" name="design" id="design">
+          Design
+        </label>
+      </label>
+      <label>
+        Written Review <span>(optional)</span>
+        <textarea name="review" id="review"></textarea>
+      </label>
+      <label>
+        Your Name <span>(optional)</span>
+        <input type="text" name="name" id="name">
+      </label>
+      <input type="submit" value="Give Review">
+    </form>
+  </main>
+  <footer>
+    <p>
+      ©️ <span id="currentyear"></span> | Nathan Cluff | Utah, USA 🇺🇸
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+
+</html>
