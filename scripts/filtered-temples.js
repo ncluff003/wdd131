@@ -1,5 +1,7 @@
 const hamburgerMenu = document.getElementById("menu");
 const nav = document.querySelector("header nav");
+const mainElement = document.querySelector("main");
+const navigationLinks = nav.querySelectorAll("a");
 
 hamburgerMenu.addEventListener("click", () => {
   nav.classList.toggle("show");
@@ -78,3 +80,103 @@ const temples = [
     imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/mesa-arizona-temple/mesa-arizona-temple-46561-main.jpg",
   },
 ];
+
+temples.forEach((temple) => {
+  const templeInfoLabels = ["Location: ", "Dedicated: ", "Size: "];
+  const templeInfo = [temple.location, temple.dedicated, temple.area];
+  const article = document.createElement("article");
+  const h4Heading = document.createElement("h4");
+  const image = document.createElement("img");
+  const infoContainer = document.createElement("div");
+
+  h4Heading.textContent = temple.templeName;
+
+  article.appendChild(h4Heading);
+
+  templeInfoLabels.forEach((label, index) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = `${label}${templeInfo[index]}${label === "Size: " ? " sq ft." : ""}`;
+
+    infoContainer.appendChild(paragraph);
+  });
+
+  article.appendChild(infoContainer);
+
+  image.src = temple.imageUrl;
+  image.alt = temple.templeName;
+  image.style.width = "100%";
+  image.style.height = "auto";
+  image.loading = "lazy";
+
+  article.appendChild(image);
+
+  article.classList.add("temple-card");
+
+  mainElement.appendChild(article);
+});
+
+console.log(navigationLinks);
+
+navigationLinks.forEach((link) => {
+  const templeCards = document.querySelectorAll(".temple-card");
+  switch (link.textContent) {
+    case "Home":
+      link.addEventListener("click", () => {
+        templeCards.forEach((temple) => temple.classList.remove("hidden"));
+      });
+      break;
+    case "Old":
+      link.addEventListener("click", () => {
+        console.log(templeCards);
+        templeCards.forEach((temple, index) => {
+          const date = new Date(temples[index].dedicated);
+          console.log(date, date.getFullYear);
+          if (date.getFullYear() > 1900) {
+            temple.classList.add("hidden");
+          } else {
+            temple.classList.remove("hidden");
+          }
+        });
+      });
+      break;
+    case "New":
+      link.addEventListener("click", () => {
+        templeCards.forEach((temple, index) => {
+          const date = new Date(temples[index].dedicated);
+          if (date.getFullYear() < 2000) {
+            temple.classList.add("hidden");
+          } else {
+            temple.classList.remove("hidden");
+          }
+        });
+      });
+      break;
+    case "Large":
+      link.addEventListener("click", () => {
+        templeCards.forEach((temple, index) => {
+          if (temples[index].area < 90000) {
+            temple.classList.add("hidden");
+          } else {
+            temple.classList.remove("hidden");
+          }
+        });
+      });
+      break;
+    case "Small":
+      link.addEventListener("click", () => {
+        templeCards.forEach((temple, index) => {
+          if (temples[index].area > 10000) {
+            temple.classList.add("hidden");
+          } else {
+            temple.classList.remove("hidden");
+          }
+        });
+      });
+      break;
+    default:
+      link.addEventListener("click", () => {
+        templeCards.forEach((temple) => temple.classList.remove("hidden"));
+      });
+      break;
+  }
+});

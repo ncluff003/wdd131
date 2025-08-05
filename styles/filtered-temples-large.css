@@ -121,6 +121,40 @@ main figure figcaption {
   padding: 1rem 0;
 }
 
+main .temple-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  min-height: max-content;
+  background-color: #cccccc44;
+  border: 0.1rem solid gray;
+  border-radius: 0.25rem;
+}
+
+main .temple-card h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main .temple-card.hidden {
+  display: none;
+}
+
+main .temple-card div {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+main .temple-card img {
+  box-shadow: 0rem 0rem 0.75rem #1a1a1a;
+}
+
 footer {
   position: relative;
   display: flex;
