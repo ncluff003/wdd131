@@ -1,0 +1,45 @@
+@media screen and (max-width: 700px) {
+  header {
+    width: 100vw;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header nav.show {
+    display: flex;
+  }
+
+  header > nav + #menu {
+    display: flex;
+    z-index: 10;
+  }
+
+  header > nav + #menu::before {
+    display: flex;
+    /* content: "🍔"; */
+    content: "☰";
+  }
+
+  header > nav.show + #menu::before {
+    content: "❌";
+  }
+
+  header > nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 35vw;
+    flex-flow: column nowrap;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #222222ee;
+  }
+
+  header > nav > a:not(:first-of-type) {
+    margin-top: 2rem;
+  }
+}

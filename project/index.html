@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Developer Toolbox</title>
+  <meta name="description"
+    content="A couple of tools for developers to use, specifically a regex converter for html pattern attributes and a color converter tool.">
+  <meta name="author" content="Nathan Cluff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index_small.css">
+  <script src="scripts/index.js" async defer></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <header>
+    <span>
+      Developer Toolbox
+    </span>
+    <nav id="navigation">
+      <a href="/">Home</a>
+      <a href="/regex">Regex Converter</a>
+      <a href="/color-converter">Color Converter</a>
+    </nav>
+    <a href="/" id="menu"></a>
+  </header>
+  <main>
+    <section id="introduction">
+      <h1>Why reinvent the wheel when you can make new web tools?</h1>
+      <p>Scroll down to view the tools I have made.</p>
+    </section>
+    <section id="regex">
+      <h2>Regex Converter</h2>
+      <picture>
+        <source>
+        <source>
+        <img src="" alt="">
+      </picture>
+    </section>
+    <section id="color">
+      <h2>Color Converter</h2>
+      <picture>
+        <source>
+        <source>
+        <img src="" alt="">
+      </picture>
+    </section>
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form action="suggestion.html" method="get">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="firstName">
+            <span>First Name</span>
+            <input type="text" name="firstName" id="firstName" required>
+          </label>
+          <label for="lastName">
+            <span>Last Name</span>
+            <input type="text" name="lastName" id="lastName" required>
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="email" id="email" required>
+          </label>
+        </fieldset>
+        <label for="message" id="message-label">
+          <span>Your Message</span>
+          <textarea name="message" id="message" title="message" minlength="10" required></textarea>
+        </label>
+        <input type="submit" value="Share Suggestion">
+      </form>
+
+    </section>
+  </main>
+  <footer>
+    <p>
+      ©️ <span id="currentyear"></span> | Nathan Cluff | Utah, USA 🇺🇸
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
