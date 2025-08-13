@@ -1,12 +1,12 @@
 const navigation = document.querySelector("#navigation");
 const hamburgerMenu = document.querySelector("#menu");
 
-console.log(navigation, hamburgerMenu);
-
-hamburgerMenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  navigation.classList.toggle("show");
-});
+if (hamburgerMenu) {
+  hamburgerMenu.addEventListener("click", (e) => {
+    e.preventDefault();
+    navigation.classList.toggle("show");
+  });
+}
 
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
