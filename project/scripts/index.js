@@ -11,17 +11,18 @@ if (hamburgerMenu) {
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
-currentYear.textContent = new Date().getFullYear();
-lastModified.textContent = `Last Updated: ${new Date(document.lastModified).toLocaleString("en", {
-  weekday: "long",
-  month: "long",
-  day: "2-digit",
-  year: "numeric",
-  hour: "2-digit",
-  minute: "2-digit",
-  second: "2-digit",
-  timeZoneName: "long",
-})}`;
+if (currentYear) currentYear.textContent = new Date().getFullYear();
+if (lastModified)
+  lastModified.textContent = `Last Updated: ${new Date(document.lastModified).toLocaleString("en", {
+    weekday: "long",
+    month: "long",
+    day: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    timeZoneName: "long",
+  })}`;
 
 const regexInput = document.querySelector("#regex");
 const regexConvert = document.querySelector("#convert");
