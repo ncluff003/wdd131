@@ -12,14 +12,47 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="">
-  <script src="" async defer></script>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index_small.css">
+  <link rel="stylesheet" href="styles/regex.css">
+  <script src="scripts/index.js" async defer></script>
 </head>
 
 <body>
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+  <header>
+    <span>
+      Developer Toolbox
+    </span>
+    <nav id="navigation">
+      <a href="/project">Home</a>
+      <a href="regex.html">Regex Converter</a>
+      <a href="color-converter.html">Color Converter</a>
+    </nav>
+    <a href="/" id="menu"></a>
+  </header>
+  <main>
+    <h1>Regex Converter To HTML Pattern</h1>
+    <form class="regex-form">
+      <label>
+        <span>
+          Regex Expression:
+        </span>
+        <input type="text" name="regex" id="regex">
+      </label>
+      <button type="submit" id="convert">Convert to HTML Pattern</button>
+    </form>
+  </main>
+  <footer>
+    <p>
+      ©️ <span id="currentyear"></span> | Nathan Cluff | Utah, USA 🇺🇸
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
 
 </body>
 
