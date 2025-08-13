@@ -11,8 +11,8 @@ if (hamburgerMenu) {
 const currentYear = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 
-currentYear.innerText = new Date().getFullYear();
-lastModified.innerText = `Last Updated: ${new Date(document.lastModified).toLocaleString("en", {
+currentYear.textContent = new Date().getFullYear();
+lastModified.textContent = `Last Updated: ${new Date(document.lastModified).toLocaleString("en", {
   weekday: "long",
   month: "long",
   day: "2-digit",
